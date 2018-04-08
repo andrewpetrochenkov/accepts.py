@@ -1,0 +1,7 @@
+box: python
+os:
+  - linux
+  - osx
+build:
+  steps:
+    - looking-for-a-job/run

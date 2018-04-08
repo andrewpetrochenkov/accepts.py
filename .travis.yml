@@ -1,0 +1,36 @@
+language: python
+# https://docs.travis-ci.com/user/caching/
+cache:
+  directories:
+    - $HOME/.cache/pip
+# https://docs.travis-ci.com/user/languages/python/
+python:
+  - "2.6"
+  - "2.7"
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.5-dev"
+  - "3.6"
+  - "3.6-dev"
+  - "3.7-dev"
+  - "nightly"
+
+sudo: false
+
+env:
+  - PYTHONIOENCODING="UTF-8"
+
+branches:
+  only:
+    - master
+
+git:
+  depth: 10
+
+# https://docs.travis-ci.com/user/notifications/
+notifications:
+  email: false
+
+script:
+  - bash tests/.sh/run.sh

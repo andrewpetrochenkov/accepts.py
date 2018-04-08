@@ -1,0 +1,9 @@
+# http://docs.codeclimate.com/article/169-configuring-analysis-languages
+languages:
+  Python: true
+
+# http://docs.codeclimate.com/article/166-excluding-files-folders
+exclude_paths:
+  - deprecated/**
+  - tests/**
+  - examples/**
