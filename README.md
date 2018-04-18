@@ -1,6 +1,6 @@
 [![](https://img.shields.io/badge/language-Python-blue.svg?maxAge=604800)]()
 [![](https://img.shields.io/pypi/pyversions/accepts.svg?maxAge=86400)](https://pypi.org/pypi/accepts/)
-[![](https://img.shields.io/pypi/v/accepts.svg)](https://pypi.org/pypi/accepts)
+[![](https://img.shields.io/pypi/v/accepts.svg?maxAge=86400)](https://pypi.org/pypi/accepts)
 
 [![](https://www.codefactor.io/repository/github/looking-for-a-job/accepts.py/badge)](https://www.codefactor.io/repository/github/looking-for-a-job/accepts.py)
 [![](https://codeclimate.com/github/looking-for-a-job/accepts.py/badges/gpa.svg)](https://codeclimate.com/github/looking-for-a-job/accepts.py)
