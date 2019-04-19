@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+from accepts import accepts
+
+
+@accepts((int, float))
+def inc(arg):
+    return arg + 1
+
+
+try:
+    inc(1)  # ok
+    inc(1.5)  # ok
+    inc("string")  # TypeError
+except TypeError as e:
+    print("%s: %s" % (type(e), str(e)))
