@@ -18,7 +18,12 @@ def _err_msg(func, args, pos, required_types):
 
 
 def _func_args(f):
-    return len(inspect.getargspec(f).args)
+    try:
+        # getargspec() is deprecated in python3, so use drop-in-replacement getfullargspec() whenever available
+        return len(inspect.getfullargspec(f).args)
+    except AttributeError:
+        # fall back to getargspec() if getfullargspec() is not available (python2)
+        return len(inspect.getargspec(f).args)
 
 
 def _validate_args(f, args, types):
