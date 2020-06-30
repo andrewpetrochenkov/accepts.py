@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+from accepts import accepts
+
+
+@accepts((int, type(None)))
+def inc(arg):
+    if not arg:
+        return 1
+    return arg + 1
+
+
+try:
+    inc(42)  # ok
+    inc(None)  # ok
+    inc("string")  # TypeError
+except TypeError as e:
+    print("%s: %s" % (type(e), str(e)))
